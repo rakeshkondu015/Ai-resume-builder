@@ -15,11 +15,11 @@ public class CoverLetter {
     private String title;
 
     @Lob
-    @Column(name = "job_description", columnDefinition = "LONGTEXT", nullable = false)
+    @Column(name = "job_description", columnDefinition = "TEXT", nullable = false)
     private String jobDescription;
 
     @Lob
-    @Column(columnDefinition = "LONGTEXT", nullable = false)
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
     @ManyToOne(fetch = FetchType.LAZY)

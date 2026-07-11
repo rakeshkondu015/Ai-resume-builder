@@ -22,7 +22,7 @@ public class Resume {
     private User user;
 
     @Lob
-    @Column(columnDefinition = "LONGTEXT", nullable = false)
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String content; // JSON payload storing dynamic resume sections
 
     @Column(name = "created_at", nullable = false)
