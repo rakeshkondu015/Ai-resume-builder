@@ -1,0 +1,26 @@
+# Java compiled binaries
+**/target/
+*.class
+
+# Node dependency modules
+**/node_modules/
+**/dist/
+
+# Portable Maven binary folder
+/maven-bin/
+
+# Local IDE configuration folders
+.idea/
+.vscode/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
