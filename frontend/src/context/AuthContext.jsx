@@ -63,7 +63,7 @@ export const AuthProvider = ({ children }) => {
       console.error(err);
       return { 
         success: false, 
-        message: err.response?.data?.message || 'Registration failed. Email might already exist.' 
+        message: err.response?.data?.message || err.response?.data?.error || 'Registration failed. Server connection error.' 
       };
     } finally {
       setLoading(false);
